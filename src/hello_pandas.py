@@ -69,14 +69,15 @@ def hello_panda_csv():
     # df=df_raw.loc[df_raw['is_fraud']==1] # All the rows with is_fraud=1
     # df=df_raw.loc[df_raw['is_fraud']==1, ['country', 'is_fraud']] # Rows with is_fraud=1 with country and is_fraud column
     
-    df=df_raw[df_raw['is_fraud']==1].groupby('country').size() # Fraud by country
+    # df=df_raw[df_raw['is_fraud']==1].groupby('country').size() # Fraud by country
     
     # Pivot by country, show column percent
     # df=_fraud_by_country(df_raw)
     
     # Pivot by country, device, show column percent
-    df=_fraud_by_country_device(df_raw)
+    # df=_fraud_by_country_device(df_raw)
     
+    df=_fraud_by_user(df_raw)
     
     print(df)
     
@@ -106,12 +107,27 @@ def _fraud_by_country_device(df_raw):
 
     fraud_by_country_device_pct=round(fraud_by_country_device*100/fraud_by_country_device.sum(), 2)
     
-    assert fraud_by_country_device_pct.sum()==100, "The total percentage is not 100"
+    assert round(fraud_by_country_device_pct.sum())==100, print("The total percentage is not 100. {}".format(fraud_by_country_device_pct.sum()))
     
     df=pd.DataFrame({
         'count': fraud_by_country_device,
         'percent': fraud_by_country_device_pct.astype(str) + '%'
     })
+    return df
+
+def _fraud_by_user(df_raw):
+    fraud_by_user=df_raw[df_raw['is_fraud']==1].groupby(['user_id']).size()
+
+    fraud_by_user_pct=round(fraud_by_user*100/fraud_by_user.sum(), 2)
+    
+    assert round(fraud_by_user_pct.sum())==100, print("The total percentage is not 100. {}".format(fraud_by_user_pct.sum()))
+    
+    df=pd.DataFrame({
+        'count': fraud_by_user,
+        'percent': fraud_by_user_pct
+    }).sort_values('percent', ascending=False).head(10)
+    
+    df['percent']=df['percent'].astype(str) + "%"
     return df
 
 if __name__=='__main__':
