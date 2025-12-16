@@ -1,0 +1,41 @@
+San Das | Senior Software Engineering Manager
+linkedin.com/in/sansprofile | fnsanlndas@gmail.com | (415) 610-8375 | San Francisco, CA
+Summary
+Hands-on engineering leader with 18+ years of experience delivering scalable backend systems, enterprise integrations, and consumer-facing products across e-commerce, fintech, and payments domains. I combine a principled approach to people management with deep technical engagement, fostering productive relationships with partners and stakeholders. I support my team in designing, building, and operating resilient systems within an inclusive and high-performing culture, taking ownership of measurable business and financial impact.
+Experience
+Senior Engineering Manager | US Bank, San Francisco | Jul 2023-Jul 2025
+Transformed an 8-person full-stack team into a high-impact unit in 4 months via continuous improvements, technical direction, and coaching. Promoted two staff, mentored two aspiring engineering managers, and supported peer EMs in technical execution and people management.
+Led the integration strategy and technical delivery for Xero accounting and QuickBooks Desktop (QBD) to the  Spend Management platform, benefitting ~500k SMB business merchants with accounting automation.
+Guided engineering org to use Splunk for observability, troubleshooting, production system monitoring, and operations, achieving 40% organizational adoption.
+Engineering Manager | The RealReal, San Francisco | May 2022–May 2023
+Managed two teams of 9 backend and full-stack engineers. 2 hires, 100% retention. Accountable for technical roadmap, documentation, career development, feedback, and performance management.
+Led development of in-store return fee, generating EBITDA of $1M per year. 
+Led iterative development of Concierge Customer Service to handle 15k monthly seller-support requests, reducing resolution time from 72 to 22 hours.
+Partnered with product managers, designers, architects, and data scientists to drive alignment on team deliverables, tech debt, and quarterly goals aligned with company OKRs. Collaborated cross-functional with partners in legal, operations, and marketing for 12+ multi-channel communication and marketing campaigns.
+Engineering Manager II | PayPal, San Francisco | Feb 2020–Feb 2022
+Managed a team of 7 backend engineers, collaborating with 12+ partner teams to build the High Yield Savings Account. Responsible for guiding technical strategy, managing blockers and dependency management, and project management. 
+Led hiring in PayPal's Consumer group, recruiting 9 backend and frontend engineers for 3 new Scrum teams. Assembled and led a team of 7 engineers to open PayPal Goals to 10s of millions of PayPal users.
+Set up alerting, runbooks, and dashboards to monitor API performance and reduce incident response time.
+Engineering Manager | PayPal, San Francisco | Oct 2018–Jan 2020
+Established and managed a team of three backend engineers. Oversaw sprint deliverables, provided training on the payments domain and both monolithic and microservice architectures, and coached team members through pair programming.
+Developed 3DS support on Xoom.com, leading to remittance service expansion in the EU, Australia, and Canada. Produced reports to identify and resolve issues affecting 25% high-value card transactions.
+Coordinated with PM to manage sprint goals, backlog, quarterly roadmaps, and release strategy. Guided SDETs to automate the test suite for our REST APIs.
+Developed extensive operational procedures for incident management, RCA, and production support.
+Member of Technical Staff | PayPal, San Francisco | Jan 2018–Sep 2018
+Built a horizontally scalable and high-throughput microservice to process $1.2 billion in card transactions, saving the company $4M annually in processing fees. Supported by extensive alerts and dashboards for monitoring, operations, and data-driven decision-making.
+Prototyped 3DS and pay-with-PayPal on Xoom, and guided 6+ teams on implementation.
+Software engineer | PayPal/Xoom, San Francisco | Aug 2013–Dec 2017
+Developed REST APIs on a microservices architecture for Credit card metadata and PayPal funding instruments. Innovated on scripts and load tests to support rapid prototyping, scaling, and testing.
+Led the development of a phone-reload app. Owned system design and technical architecture, project management, and status reporting. Guided 3 remote engineers on implementation, code review, and release.
+Developed an application for international bill payments: web controllers, annotation-based configuration patterns, service clients, filters and interceptors, cookies synchronization, and error handling.
+Software Dev Engineer in Test | Microsoft, Redmond | Jan 2011–Jan 2013
+Developed about 150 automation tests on the application and kernel-level debugging on Visual Studio.
+Executed quality assurance and test plans for native Windows debuggers through ~4 public releases.
+Software Dev Engineer | Amazon.com, Seattle | Dec 2007–Dec 2010
+Developed an application to create, update, and find baby and wedding registries on Target.com.
+Created a solution to customize product pricing and description on the Target Weekly Ad.
+Built 5 reusable product-recommendation widgets for the cart and order-confirmation page.
+Skills
+Distributed system Design, Microservices Architecture, Agile Scrum methodologies, AI (LLM, Cursor, Copilot), Service Oriented Architecture (RESTful, GraphQL), Java, Python, Test Driven Development (TDD), OAuth, Spring Boot, Relational databases (MySQL, PostgreSQL, Oracle), Javascript, SaaS (LaunchDarkly A/B tests, Braze), Kafka, Docker, Unix, DevOps tools (CI/CID, Jenkins, Github actions), APM Tools (Splunk, Nagios, Kibana, Datadog, Cloudwatch), AWS cloud (SNS, SQS, RDS, DynamoDB, Lambda, ECS), Google GCP BigQuery, Atlassian (Jira, Confluence).
+Education
+MS in Computer Science, 2010, Maharishi International University, Fairfield, IA
