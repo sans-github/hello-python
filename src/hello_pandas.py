@@ -18,11 +18,7 @@ def hello_panda():
 
 
 def hello_panda_csv():
-    # Get the script's directory and build path from there
-    script_dir = Path(__file__).parent
-    csv_path = script_dir.parent / "data/transactions.csv"
-
-    df_raw = pd.read_csv(csv_path)
+    df_raw = _load_csv_data()
 
     print("{}{}".format("\n\n\n", "==START=="))
     print(df_raw.sample(3))
@@ -41,7 +37,11 @@ def hello_panda_csv():
 
     # print(df_raw) # Context no longer valid
 
-    # Slicing operations(on column name). [start:stop:step]
+    # Slicing operations on rows. [start:stop:step]
+    # df_raw[:2]   # First 2 rows.
+    # df_raw[2:5]  # Rows 2, 3, 4
+
+    # Slicing operations on column. [start:stop:step]
     # df_raw.columns[:2]   # First 2 columns.
     # df_raw.columns[2:5]  # Columns at index 2, 3, 4
     # df=df_raw.columns[-2:]  # Last 2 columns
@@ -53,6 +53,7 @@ def hello_panda_csv():
     # Slicing operations (on data frame). [start:stop:step]
     # df=df_raw['country'] # Column selection, as a series
     # df=df_raw[['country']] # Column selection, as DF
+    # df=df_raw[['country', 'user_id']] # To get dataframe, you must use double square brackets
 
     # Position-based indexing, not slicing.
     # df = df_raw.iloc[:, [0, 3]] # Select all rows, and columns 0 and 3
@@ -91,6 +92,13 @@ def hello_panda_csv():
     print(type(df))
     print(df_raw.columns)
     print(f"{'===▲▲▲▲===\n'}")
+
+
+def _load_csv_data():
+    script_dir = Path(__file__).parent
+    csv_path = script_dir.parent / "data/transactions.csv"
+
+    return pd.read_csv(csv_path)
 
 
 # Single underscore _method is the Python convention for "internal use" - it's not truly private but signals it shouldn't be called externally. Double underscore __method applies name mangling for stricter privacy.
@@ -151,6 +159,28 @@ def _fraud_by_user(df_raw):
     return df
 
 
+def _fraud_by_country_user():
+    df_raw = _load_csv_data()
+
+    fraud_country_user_count = (
+        df_raw.loc[df_raw["is_fraud"] == 1, ["country", "user_id"]]
+        .groupby(["country", "user_id"])
+        .size().sort_values(ascending=False)
+    )
+
+    fraud_country_user_percent = (
+        fraud_country_user_count * 100 / fraud_country_user_count.sum()
+    )
+
+    df = pd.DataFrame(
+        {"count": fraud_country_user_count, "percent": fraud_country_user_percent}
+    )
+
+    # Display everything. Not just a subset
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):
+        print(df)
+
 if __name__ == "__main__":
     # hello_panda()
-    hello_panda_csv()
+    # hello_panda_csv()
+    _fraud_by_country_user()
