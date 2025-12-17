@@ -16,10 +16,12 @@
     ```
 
 
-# pip reference
-* List of installed dependencies with `pip list`
+# UV reference
+* Create/update the env from toml file `UV sync`
 
-* Write installed Python packages to requirements.txt: `pip freeze > requirements.txt`
+* List of installed dependencies with `uv pip list`
+
+* Write installed Python packages to requirements.txt: `UV pip freeze > requirements.txt`
 
 # Exit
 To deactivate the env - `deactivate`
