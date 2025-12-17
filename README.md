@@ -1,7 +1,6 @@
 # Resources
 [Learning Pandas for Data Analysis? Start Here by Rob Mulla](https://www.youtube.com/watch?v=DkjCaAMBGWM)
 
-
 # Set up
 1. Create a virutal env: `python3 -m venv .venv`
 
