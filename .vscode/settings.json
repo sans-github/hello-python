@@ -3,11 +3,16 @@
         "**/.venv": true,
         "**/__pycache__": true,
         "**/.pytest_cache": true,
-        "**/pyvenv.cfg": true,
+        "**/pyvenv.cfg": true
     },
     "python.languageServer": "Pylance",
     "[python]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "charliermarsh.ruff"
-    }
+    },
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedVariable": "none",
+        "reportUnusedImport": "none",
+        "reportUndefinedVariable": "none"
+  }
 }
