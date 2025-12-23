@@ -1,0 +1,67 @@
+
+MATPLOTLIB LEARNING DATASET - COLUMN GUIDE
+==========================================
+
+This dataset is designed to teach matplotlib progressively. Here's what each column enables:
+
+TEMPORAL ANALYSIS:
+- date: Line plots over time, time series
+- month: Grouped bar charts by month
+- quarter: Seasonal comparisons
+- day_of_week: Weekly patterns
+
+NUMERIC DISTRIBUTIONS:
+- amount: Histograms, distribution plots
+- quantity: Count-based plots
+- discount_percent: Percentage-based visualizations
+- revenue: Primary metric for most plots
+- customer_rating: Scatter plot correlations
+
+CATEGORICAL GROUPING:
+- category: Group by product type (5 categories)
+- region: Geographic comparisons (4 regions)
+- payment_method: Payment type analysis (4 methods)
+
+BINARY FILTERS:
+- is_member: Compare member vs non-member
+- is_online: Online vs offline transactions
+
+LEARNING PATH MAPPING:
+======================
+
+1. SINGLE PLOT, SINGLE VARIABLE:
+   - Line: revenue over date
+   - Bar: total revenue by category
+   - Histogram: distribution of amount
+
+2. BASIC CUSTOMIZATION:
+   - Use any of the above with titles, labels, colors
+
+3. MULTIPLE ELEMENTS, SAME PLOT:
+   - Multiple lines: revenue by region over time
+   - Multiple bars: revenue by category for each quarter
+   - Overlayed histograms: amount distribution by is_member
+
+4. DIFFERENT PLOT TYPES:
+   - Combine line (revenue over time) + bar (by category) + scatter (amount vs rating)
+
+5. GROUPED CATEGORICAL:
+   - One line per region showing revenue over time
+   - Grouped bars: category revenue by payment_method
+   - Stacked bars: category breakdown by region
+
+6. SUBPLOTS:
+   - Grid of plots: one per region or category
+   - Shared axes: compare regions with aligned scales
+
+7. STYLING:
+   - Add legends for multiple lines/bars
+   - Rotate x-axis labels for date/category
+   - Annotate maximum values
+
+8. FIGURE CONTROL:
+   - Multiple axes: main revenue + quantity subplot
+   - Twin axes: revenue and customer_rating on same plot
+
+9. OUTPUT:
+   - Save any plot to PNG
