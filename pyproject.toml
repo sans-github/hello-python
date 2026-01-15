@@ -5,6 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "llm-library",
     "matplotlib>=3.10.8",
     "pandas>=2.3.3",
 ]
+
+[tool.uv.sources]
+llm-library = { path = "../../../../../../storage/Tech/depot/github/python/llm_library", editable = true }
