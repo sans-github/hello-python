@@ -30,14 +30,6 @@ ENV/
 .ipynb_checkpoints
 *.ipynb
 
-# Data files (usually don't commit large datasets)
-data/raw/*.csv
-data/processed/*.csv
-data/raw/*.json
-data/processed/*.json
-data/raw/*.parquet
-data/processed/*.parquet
-
 # But allow sample/example data (uncomment if you want to commit small sample files)
 # !data/raw/sample_transactions.csv
 
@@ -48,7 +40,6 @@ models/*.h5
 models/*.pt
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
