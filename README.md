@@ -23,5 +23,7 @@
 
 * Write installed Python packages to requirements.txt: `UV pip freeze > requirements.txt`
 
+* `uv tool run ruff check --fix .` Fix formatting. 
+
 # Exit
 To deactivate the env - `deactivate`

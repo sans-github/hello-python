@@ -71,11 +71,11 @@ def generate_transactions_dataset(n_rows=1000, output_path="data/data_matplotlib
     print(f"Dataset generated: {n_rows} rows")
     print(f"Saved to: {output_file.absolute()}")
     print(f"\nColumns: {', '.join(df.columns)}")
-    print(f"\nFirst few rows:")
+    print("\nFirst few rows:")
     print(df.head())
-    print(f"\nData types:")
+    print("\nData types:")
     print(df.dtypes)
-    print(f"\nBasic stats:")
+    print("\nBasic stats:")
     print(df.describe())
 
     return df
